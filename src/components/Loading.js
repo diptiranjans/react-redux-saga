@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import img from "../assets/images/signs.png";
+import img from "../assets/images/loader.png";
 const Loading = () => {
   const { loading } = useSelector(state => state.news);
   return (
