@@ -1,18 +1,12 @@
 import React from "react";
-import Button from "./components/Button";
-import Loading from "./components/Loading";
-import NewsItem from "./components/NewsItem";
+import Basic from "./components/BasicComponent";
+
 const App = () => {
   return (
     <div className="container">
       <div className="row">
-        <Button />
+        <Basic />
       </div>
-      <div className="row">
-        <Loading />
-      </div>
-
-      <NewsItem />
     </div>
   );
 };
