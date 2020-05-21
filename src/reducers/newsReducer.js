@@ -1,22 +1,24 @@
 const initialState = {
-  loading: false
+  loading: false,
+  newsList: []
 };
-
-const buttonReducer = (state = initialState, action) => {
-  if (action.type === "GET_NEWS") {
+const newsReducer = (state = initialState, action) => {
+  if (action.type === "FETCH_NEWS") {
     return {
       ...state,
       loading: true
     };
   }
+
   if (action.type === "NEWS_RECEIVED") {
     return {
       ...state,
       loading: false,
-      news_list: action.payload
+      newsList: action.payload
     };
   }
+
   return state;
 };
 
-export default buttonReducer;
+export default newsReducer;

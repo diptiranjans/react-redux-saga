@@ -5,7 +5,6 @@ function* fetchNews() {
     `http://newsapi.org/v2/everything?q=bitcoin&from=2020-04-21&sortBy=publishedAt&apiKey=ebb4e990874246c894b63d2e79f04754`
   ).then(response => response.json());
 
-  console.log(response);
   yield put({
     type: "NEWS_RECEIVED",
     payload: response.articles
@@ -13,7 +12,7 @@ function* fetchNews() {
 }
 
 function* actionWatcher() {
-  yield takeLatest("GET_NEWS", fetchNews);
+  yield takeLatest("FETCH_NEWS", fetchNews);
 }
 
 export default function* rootSaga() {

@@ -7,7 +7,7 @@ body {
 }
 
 /* Float four columns side by side */
-.column {
+.column1 {
   float: left;
   width: 25%;
   padding: 0 10px;
@@ -15,12 +15,12 @@ body {
 }
 
 /* Remove extra left and right margins, due to padding */
-.row {
+.row1 {
   margin: 0 -5px;
 }
 
 /* Clear floats after the columns */
-.row:after {
+.row1:after {
   content: "";
   display: table;
   clear: both;
@@ -28,7 +28,7 @@ body {
 
 /* Responsive columns */
 @media screen and (max-width: 600px) {
-  .column {
+  .column1 {
     width: 100%;
     display: block;
     margin-bottom: 20px;
@@ -50,6 +50,6 @@ img {
   border-radius: 5px 5px 0 0;
 }
 
-.container {
+.container1 {
   padding: 2px 16px;
 }

@@ -8,10 +8,10 @@ const App = () => {
       <div className="row">
         <Button />
       </div>
-
-      <div>
+      <div className="row">
         <Loading />
       </div>
+
       <NewsItem />
     </div>
   );

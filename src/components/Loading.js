@@ -1,10 +1,8 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import img from "../assets/images/signs.png";
-
-let Loading = () => {
+const Loading = () => {
   const { loading } = useSelector(state => state.news);
-
   return (
     loading && (
       <div style={{ textAlign: "center" }}>
